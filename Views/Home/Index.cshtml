@@ -1,9 +1,13 @@
-﻿@model TrabajoIntegradorSofttekFront.Models.Login﻿Response
+﻿@model TrabajoIntegradorSofttekFront.ViewModels.HomeViewModel
 @{
     ViewData["Title"] = "Home Page";
 
 }
 
+@Html.HiddenFor(x=> x.Token);
+
 <div class="text-center">
     <h1 class="display-4">Bienvenido @ViewBag.Nombre @ViewBag.Cuil</h1>
 </div>
+
+<script src="~/js/Home/Home.js"> </script>
